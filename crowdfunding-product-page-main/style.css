@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Commissioner', sans-serif;
+}
+body{
+	background-color: #fafafa;
+}
+/*top Hero Section*/
+.nav{
+	display: flex;
+	background-image: url(images/image-hero-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 40vh;
+	color: white;
+	justify-content: space-between;
+	padding: 25px 60px;
+}
+.logo h1{
+	cursor: pointer;
+}
+.nav-elements{
+	display: flex;
+	padding-top: 10px;
+}
+.nav-elements li{
+	list-style-type: none;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.toggle{
+	padding-top: 12px;
+	display: none;
+}
+/*top Hero end*/
+
+/*Main Content*/
+.card{
+	width: 618px;
+	margin: auto;
+	padding: 30px;
+	background-color: white;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+p{
+	font-size: 13px;
+	letter-spacing: .5px;
+	line-height: 1.7;
+	font-weight: 500;
+	color: #686868;
+}
+h1{
+	font-size: 28px;
+}
+.project-name h1,
+.project-name p{
+	text-align: center;
+	margin-bottom: 15px;
+}
+.take-action{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+} 
+button{
+	padding: 17px 34px;
+	border-radius: 26px;
+	border: none;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: .5px;
+	outline: none;
+	cursor: pointer;
+}
+.bookmark{
+	display: flex;	
+	background-color: #f4f4f4;
+	border-radius: 26px;
+	cursor: pointer;
+}
+.bookmark img{
+	margin-right: 17px;
+	width: 34%;
+}
+.bookmark p{
+	margin-bottom: 0;
+	margin-top: 13px;
+  margin-right: 10px;
+	font-weight: 600;
+}
+.green{
+	color: white;
+	background-color: hsl(176, 50%, 47%);
+}
+.green:hover{
+	background-color: #157a74;
+}
+.data-content{
+	display: flex;
+	width: 90%;
+}
+.numbers{
+	margin-right: 36px;
+}
+.numbers h1{
+	margin-bottom: 5px;
+}
+.numbers-two{
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+	padding: 0 75px 0 34px;
+}
+.slide-bg{
+	height: 10px;
+	width: 100%;
+	background-color: #f4f4f4;
+	border-radius: 6px;
+	margin-top: 30px;
+}
+.slide-fill{
+	height: 10px;
+	width: 75%;
+	background-color: hsl(176, 50%, 47%);
+	border-radius: 6px;	
+}
+
+/*About Section*/
+.about-project h3{
+	margin-bottom: 25px;
+}
+.about-project p{
+	margin-bottom: 25px;
+}
+
+/*Pledges Section*/
+.pledges{
+	border: 1px solid #dddddd;
+	border-radius: 8px;
+	padding: 25px;
+	margin-bottom: 20px;
+}
+.pledge-heading{
+	display: flex;
+	justify-content: space-between;
+}
+.pledge-rank{
+	color: #75c5ba;
+	font-size: 500;
+}
+.pledge-selection{
+	display: flex;
+	justify-content: space-between;
+}
+.pledge-selection p{
+	margin-bottom: 0;
+}
+.pledge-selection .bamboo-left,
+.pledge-selection .black-edition-left{
+	font-size: 28px;
+	font-weight: 700;
+	color: black;
+	margin-right: 5px;
+}
+
+/*Inactive Pledge Section*/
+.pledges.out-of-stock{
+	border: 1px solid #eeeeee;
+}
+.out-of-stock h4{
+	color: #808080;
+}
+.pledge-selection .mahogany-left{
+	font-size: 28px;
+	font-weight: 700;
+	color: #808080;
+	margin-right: 5px;
+}
+.out-of-stock .pledge-rank{
+	color: #acd9d2;
+}
+.out-of-stock .pledge-summary{
+	color: #cbcbcb;
+}
+.inactive{
+	color: white;
+	
+	background-color: #cbcbcb;
+	padding: 17px 36px;
+}
+.inactive:hover{
+	cursor:not-allowed;
+}
+/*Main Content End*/
+
+/*Main Modal Section*/
+.modal{
+	display: none;
+	position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+	
+}
+.modal-content{
+	background-color: #ffffff;
+	width: 80%;
+  max-width: 640px;
+  position: relative;
+  margin: auto;
+	top: 5vh;
+	border-radius: 10px;
+	padding: 30px;
+}
+.exit{
+	margin-bottom: 10px;
+}
+.modal-header h4{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.modal-card{
+	border: 1px solid #dddddd;
+	
+	border-radius: 8px;
+	padding: 25px 15px 25px 15px;
+	margin: 20px 0;
+}
+.modal-pledge{
+	display: flex;
+	margin-bottom: 20px;
+}
+.modal-pledge-left{
+	margin-right: 12px;
+}
+.modal-pledge-left .far{
+	color: #dddddd;
+}
+.modal-pledge-right h5{
+	margin-bottom: 12px;
+	color: #515151;
+}
+.modal-enter{
+	border-top: 1px solid #dddddd;
+	padding: 20px 20px 1px 9px;
+	display: none;
+	/*display: flex;*/
+	justify-content: space-between;
+}
+.modal-enter p{
+	margin-top: 12px;
+}
+.modal-btn{
+	padding: 15px 25px;
+  border-radius: 29px;
+  margin-left: 10px;
+	border: none;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: .5px;
+	outline: none;
+	cursor: pointer;
+}
+.enter-pledge input{
+	width: 76px;
+	height: 44px;
+	border-radius: 21px;
+	border: 1px solid #dddddd;
+	outline: none;
+	padding-left: 8px;
+	font-weight: 700;
+}
+.enter-pledge input:focus{
+	padding-left: 25px;
+}
+.modal-card-header{
+	display: flex;
+	justify-content: space-between;
+}
+.modal-header-left{
+	display: flex;
+}
+.modal-header-left h5{
+	margin-right: 15px;
+}
+.modal-header-left h5.modal-pledge-amount{
+	color:hsl(176, 50%, 47%)
+}
+.modal-header-right p span,
+.show-on-mobile p span{
+	font-weight: 700;
+	color: black;
+	margin-right: 5px;
+}
+.show-on-mobile{
+	display: none;
+}
+.mahogany h5.not-active{
+	color: #8d8d8d;
+}
+.mahogany h5.not-working{
+	color: #cbeee7;
+}
+.modal-header-right p.not-active{
+	color: #8d8d8d;
+}
+.modal-header-right p span.not-active{
+	color: #8d8d8d;
+}
+/*Main Modal End*/
+
+/*success Modal*/
+.success-modal{
+	display: none;
+	position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.success-modal-content{
+	background-color: #ffffff;
+	width: 80%;
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+	top: 30vh;
+	border-radius: 10px;
+	padding: 46px;
+	text-align: center;
+}
+.success-badge{
+	margin-bottom: 30px;
+}
+.success-modal-content h4{
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.success-modal-content p{
+	margin-bottom: 25px;
+	line-height: 2;
+}
+
+.active-flex{
+	display: flex;
+}
+.active-block{
+	display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  /*Top Hero Section*/
+	.nav{
+		background-image: url(images/image-hero-mobile.jpg);
+		height: 35vh;
+	}
+	.toggle{
+		display: block;
+	}
+	.nav-elements{
+		position: absolute;
+		background-color: white;
+		color: black;
+		top: 10vh;
+		left: 10vw;
+		width: 80%;
+		height: 25vh;
+		font-size: 20px;
+		font-weight: 600;
+		border-radius: 12px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-left: 18px;
+		opacity: 0;	
+	}
+	.nav-active{
+		opacity: 1;
+	}
+	/*Top Hero End*/
+
+	/*Card Section*/
+	.card {
+		width: 80vw;
+	}
+	button.pledge{
+		padding: 17px 58px;
+    font-size: 15px;
+    border-radius: 29px;
+	}
+	.bookmark{
+		background-color: #ffffff;
+	}
+	.bookmark img{
+		margin-right: 0;
+		width: 60%;
+		margin-left: 44px;
+	}
+	.bookmark p{
+		display: none;
+	}
+	.data-content{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	.numbers{
+		padding-right: 0;
+		margin: 20px 95px;
+	}
+	.numbers h1{
+		padding-bottom: 10px;
+	}
+	.numbers-one{
+		border-bottom: 1px solid #efefef;
+		padding-bottom: 30px;
+	}
+	.numbers-two{
+		border-bottom: 1px solid #efefef;
+		border-left: none;
+		border-right: none;
+		padding-left: 0;
+		padding-bottom: 30px;
+	}
+	.numbers-three{
+		padding-left: 0;	
+	}
+	/*Card Section End*/
+
+	/*Pledge Section*/
+	.pledge-heading{
+		display: block;
+		line-height: 2;
+	}
+	.pledge-selection{
+		display: block;
+		line-height: 5;
+	}
+
+	/*Main Modal Section*/
+	.modal-card-header{
+		display: block;
+	}
+	.modal-header-left{
+		display: block;
+	}
+	.modal-header-left h5{
+		font-size: 15px;
+	}   
+	.modal-header-right{
+		display: none;
+	}
+	.show-on-mobile{
+		display: block;
+		margin-top: 15px;
+	}
+	.show-on-mobile p span{
+		font-size: 24px;
+	}
+	.modal-enter{
+		display: none;
+		text-align: center;
+	}
+	.modal-enter-title p{
+		font-size: 16px;
+	}
+	.enter-pledge{
+		margin-top: 15px;
+	}
+	.enter-pledge{
+		display: flex;
+		justify-content: space-around;
+	}
+	.enter-pledge input{
+		width: 105px;
+		height: 50px;
+		border-radius: 25px;
+	}
+	.enter-pledge .modal-btn{
+		font-size: 15px;
+	}
+
+	/*Main Modal End*/
+
+	/*Completed Modal Section*/
+
+}

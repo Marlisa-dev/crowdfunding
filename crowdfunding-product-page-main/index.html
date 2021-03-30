@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/a10e9aabbb.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Crowdfunding product page</title>
+ 
+</head>
+<body>
+  <!--Top Hero Section-->
+  <div class="nav">
+    <div class="logo">
+      <h1>crowdfund</h1>
+    </div>
+    <div class="nav-list">
+      <ul class="nav-elements">      
+        <li><a href="#"></a>About</li>
+        <li><a href="#"></a>Discover</li>
+        <li><a href="#"></a>Get Started</li>
+      </ul>
+    </div>
+    <div class="toggle">
+      <img src="images/icon-hamburger.svg" alt="">   
+    </div>
+  </div>
+  <!--Top Hero end-->
+
+  <!--Main Content-->
+    <!--Card 1-->
+  <div class="main-content">
+    <div class="card project-name">
+      <h1>Mastercraft Bamboo Monitor Riser</h1>
+      <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+      <div class="take-action">
+        <button class="pledge green">Back this project</button>
+        <div class="bookmark">
+          <img src="images/icon-bookmark.svg" alt="" srcset="">
+          <p>Bookmark</p>         
+        </div>
+      </div>  
+    </div>
+  
+      <!--Card 2-->
+    <div class="card project-data">
+      <div class="data-content">
+        <div class="numbers numbers-one">
+          <h1>$89,916</h1>
+          <p>of $100,000 backed</p>
+        </div>
+        <div class="numbers numbers-two">
+          <h1>5,007</h1>
+          <p>total backers</p>
+        </div>
+        <div class="numbers numbers-three">
+          <h1>56</h1>
+          <p>days left</p>
+        </div>     
+      </div>
+  
+      <div class="numbers-slide">
+        <div class="slide-bg">
+          <div class="slide-fill"></div>
+        </div>
+      </div>
+  
+    </div>
+    <div class="card about-project">
+      <h3>About this project</h3>
+      <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+      
+      <p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+  
+      <div class="pledges">
+        <div class="pledge-heading">
+          <h4>Bamboo Stand</h4>
+          <p class="pledge-rank">Pledge $25 or more</p>
+        </div>
+        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+  
+        <div class="pledge-selection">
+          <p><span class="bamboo-left" id="bamboo-left">101</span>left</p>
+          <button class="bamboo-reward green">Select Reward</button>
+        </div>  
+      </div>  
+  
+      <div class="pledges out-of-stock">
+        <div class="pledge-heading">
+          <h4>Black Edition Stand</h4>
+          <p class="pledge-rank">Pledge $75 or more</p>
+        </div>
+  
+        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+  
+        <div class="pledge-selection">
+          <p><span class="black-edition-left" id="black-edition-left">64</span>left</p>
+          <button class="black-edition-reward green">Select Reward</button>
+        </div>  
+      </div> 
+  
+      <div class="pledges out-of-stock">
+        <div class="pledge-heading">
+          <h4>Mahogany Special Edition</h4>
+          <p class="pledge-rank">Pledge $20 or more</p>
+        </div>
+  
+        <p class="pledge-heading oos">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+  
+        <div class="pledge-selection">
+          <p><span class="mahogany-left" id="mahogany-left">0</span>left</p>   
+          <button class="mahogany-reward inactive">Out of Stock</button>
+        </div>  
+      </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <div class="exit">
+        <img src="images/icon-close-modal.svg" alt="" srcset="">
+      </div>
+      <div class="modal-header">
+        <h4>Back this project</h4>
+        <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+      </div>
+
+      <!--Modal Card 1-->
+      <div class="modal-card">    
+        <div class="modal-pledge">
+          <div class="modal-pledge-left">
+            <i class="far fa-circle"></i>
+          </div>
+          <div class="modal-pledge-right">
+            <h5>Pledge with no reward</h5>
+            <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
+          </div>
+        </div>
+
+        <!--This section will be hidden until clicked-->
+        <div class="modal-enter">
+          <div>
+            <p>Enter your pledge</p>
+          </div>
+          <div class="enter-pledge">
+            <input type="text" name="" id="pledge-amount" placeholder="$">
+            <button class="modal-btn green">Continue</button>
+          </div> 
+        </div>
+      </div>
+
+      <!--Modal Card 2-->
+      <div class="modal-card">    
+        <div class="modal-pledge">
+          <div class="modal-pledge-left">
+            <i class="far fa-circle"></i>
+          </div>
+          <div class="modal-pledge-right">
+            <div class="modal-card-header">
+              <div class="modal-header-left">
+                <h5>Bamboo Stand</h5>
+                <h5 class="modal-pledge-amount">Pledge $25 or more</h5>
+              </div>
+
+              <div class="modal-header-right">
+                <p><span>101</span>left</p>
+              </div>
+            </div>
+            
+            <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
+
+            <div class="show-on-mobile">
+              <p><span>101</span>left</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!--This section will be hidden until clicked-->
+        <div class="modal-enter">
+          <div class="modal-enter-title">
+            <p>Enter your pledge</p>
+          </div>
+          <div class="enter-pledge">
+            <input type="text" name="" id="pledge-amount" placeholder="$">
+            <button class="modal-btn green">Continue</button>
+          </div> 
+        </div>
+      </div>
+
+
+      <!--Modal Card 3-->
+     
+      <div class="modal-card">    
+        <div class="modal-pledge">
+          <div class="modal-pledge-left">
+            <i class="far fa-circle"></i>
+          </div>
+          <div class="modal-pledge-right">
+            <div class="modal-card-header">
+              <div class="modal-header-left">
+                <h5>Black Edition Stand</h5>
+                <h5 class="modal-pledge-amount">Pledge $75 or more</h5>
+              </div>
+
+              <div class="modal-header-right">
+                <p><span>64</span>left</p>
+              </div>
+            </div>
+            
+            <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+
+          </div>
+        </div>
+
+        <!--This section will be hidden until clicked-->
+        <div class="modal-enter">
+          <div>
+            <p>Enter your pledge</p>
+          </div>
+          <div class="enter-pledge">
+            <input type="text" name="" id="pledge-amount" placeholder="$">
+            <button class="modal-btn green">Continue</button>
+          </div> 
+        </div>
+      </div>
+
+      <!--Modal Card 4 Inactive-->
+      <div class="modal-card">    
+        <div class="modal-pledge">
+          <div class="modal-pledge-left">
+            <i class="far fa-circle"></i>
+          </div>
+          <div class="modal-pledge-right">
+            <div class="modal-card-header">
+              <div class="modal-header-left mahogany">
+                <h5 class="not-active">Mahogany Special Edition</h5>
+                <h5 class="modal-pledge-amount not-working">Pledge $200 or more</h5>
+              </div>
+
+              <div class="modal-header-right">
+                <p class="not-active"><span class="not-active">0</span>left</p>
+              </div>
+            </div>
+            
+            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+              to our Backer member list. Shipping is included.</p>
+
+          </div>
+        </div>
+
+        <!--This section will be hidden until clicked-->
+        <div class="modal-enter">
+          <div>
+            <p>Enter your pledge</p>
+          </div>
+          <div class="enter-pledge">
+            <input type="text" name="" id="pledge-amount" placeholder="$">
+            <button class="modal-btn green">Continue</button>
+          </div> 
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Success modal start -->
+
+  <div class="success-modal">
+    <div class="success-modal-content">
+
+      <img src="images/icon-check.svg" class="success-badge">
+      
+
+      <h4 class="success-title">Thanks for your support!</h4>
+      <p class="success-text">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+        an email once our campaign is completed.</p>
+        <button class="success-btn green">Got it!</button>
+
+    </div>
+
+  </div>
+
+  <!-- Success modal start -->
+
+    <!---
+  
+  
+  Got it!
+  -->
+
+  <!-- Success modal end -->
+  <script src="app.js"></script>
+</body>
+</html>
+
